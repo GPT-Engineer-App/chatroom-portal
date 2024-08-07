@@ -12,24 +12,24 @@ export const navItems = [
     title: "Home",
     to: "/",
     icon: <Home className="h-4 w-4" />,
-    page: <Index />,
+    page: Index,
   },
   {
     title: "Register",
     to: "/register",
     icon: <UserPlus className="h-4 w-4" />,
-    page: <Register />,
+    page: Register,
   },
   {
     title: "Login",
     to: "/login",
     icon: <LogIn className="h-4 w-4" />,
-    page: <Login />,
+    page: Login,
   },
   {
     title: "Dashboard",
     to: "/dashboard",
     icon: <LayoutDashboard className="h-4 w-4" />,
-    page: <Dashboard />,
+    page: Dashboard,
   },
 ];
