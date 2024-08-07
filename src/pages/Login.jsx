@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 
-const Login = () => {
+const Login = ({ login }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ const Login = () => {
     e.preventDefault();
     // Here you would typically handle the login logic
     console.log("Login submitted", { email, password });
-    // For now, we'll just redirect to the dashboard
+    login(); // Set the authenticated state
     navigate("/dashboard");
   };
 
